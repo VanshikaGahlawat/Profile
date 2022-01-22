@@ -10,6 +10,9 @@ const app= express();
 app.use(express.json())
 const _dirname = path.resolve()
 
+// @desc Get random user from api
+// @method GET
+// @access Public
 app.get('/getUser', async (req,res) => {
     try {
         const data = await axios.get("https://randomuser.me/api/")
