@@ -10,7 +10,7 @@ const About = ({info})=>{
             </div>
             <div className="row">
             <div className="col-lg-4">
-                <img src={info.picture.large} className="img-fluid rounded-circle" alt="" />
+                <img src={info.picture.large} className="img-fluid rounded-circle" alt="profile picture" />
             </div>
             <div className="col-lg-8 pt-4 pt-lg-0 content">
                 <h3>{info.name.title}. {info.name.first} {info.name.last}</h3>
