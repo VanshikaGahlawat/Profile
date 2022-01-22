@@ -10,6 +10,8 @@ const Header= ({info}) =>{
         document.querySelector('.'+str).classList.add('active')
         let item = document.querySelector('body')
         item.classList.toggle('mobile-nav-active')
+        document.querySelector(".navicon").classList.toggle('bi-list')
+        document.querySelector(".navicon").classList.toggle('bi-x')
     }
     return(
         <>

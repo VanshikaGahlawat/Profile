@@ -24,13 +24,13 @@ const App = () => {
   const onClickHandler = (e) => {
     let item = document.querySelector('body')
     item.classList.toggle('mobile-nav-active')
-    item.classList.toggle('bi-list')
-    item.classList.toggle('bi-x')
+    e.target.classList.toggle('bi-list')
+    e.target.classList.toggle('bi-x')
   }
 
   if(userData != null) {return (
     <div>
-     <i className="bi bi-list mobile-nav-toggle d-xl-none" onClick={onClickHandler}></i>
+     <i className="bi bi-list mobile-nav-toggle d-xl-none navicon" onClick={onClickHandler}></i>
       <Header info={userData}/>
       <Home info={userData}/>
       <About info={userData}/>
