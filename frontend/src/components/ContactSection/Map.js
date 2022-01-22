@@ -21,7 +21,7 @@ const Map = ({data}) =>{
                     <h4>Call:</h4>
                     <p>+{data.cell}</p>
                 </div>
-                <iframe src={`https://www.google.com/maps/embed/v1/place?key=$AIzaSyBU62YBi438DBZE0qB5M_UTj-JLEoKNWbE&q=${data.location.city+"+"+data.location.state+"+"+data.location.country}&zoom=13&maptype=satellite`} frameborder="0" style={{width:"98.5%", height:"300px"}} allowfullscreen></iframe>
+                <iframe src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBU62YBi438DBZE0qB5M_UTj-JLEoKNWbE&q=${data.location.city+"+"+data.location.state+"+"+data.location.country}&zoom=13&maptype=satellite`} frameborder="0" style={{width:"98.5%", height:"300px"}} allowfullscreen></iframe>
             </div>
         </div>
     )
