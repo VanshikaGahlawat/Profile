@@ -9,7 +9,7 @@ const Header= ({info}) =>{
         document.querySelector('.envelope').classList.remove('active')
         document.querySelector('.'+str).classList.add('active')
         let item = document.querySelector('body')
-        item.classList.remove('mobile-nav-active')
+        item.classList.toggle('mobile-nav-active')
     }
     return(
         <>

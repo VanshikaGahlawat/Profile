@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 10;
   padding: 0 15px;
   background: #000;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 #header .profile img {
   margin: 15px auto;
@@ -354,7 +355,9 @@ section {
 
 .mobile-nav-active {
   overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 .mobile-nav-active #header {
   left: 0;
+  -webkit-transition: all 0.5s ease-in-out;
 }
