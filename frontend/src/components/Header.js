@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header= ({info}) =>{
+const Header= ({info, history}) =>{
 
     const {first, last} = info.name;
     const onClickHandler = (str) => {
@@ -13,6 +13,7 @@ const Header= ({info}) =>{
         document.querySelector(".navicon").classList.toggle('bi-list')
         document.querySelector(".navicon").classList.toggle('bi-x')
     }
+
     return(
         <>
         <header id="header">
@@ -34,6 +35,8 @@ const Header= ({info}) =>{
                     <li><a onClick={() => onClickHandler('envelope')} href="#contact" className="envelope nav-link scrollto " ><i className="bx bx-envelope"></i> <span>Contact</span></a></li>
                     </ul>
                 </nav>
+                <a href='/' className='refresh'><i class='bx bx-refresh bx-rotate-270 bx-spin-hover'></i></a>
+                <p>Refresh</p>
             </div>
         </header>
         </>

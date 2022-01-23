@@ -90,13 +90,10 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:hover i, .nav-menu .active i {
   color: #15D06F;
 }
-.updateButton{
-  margin-top: 1.5rem;
-  color:#cbcbcf;
-}
-.updateButton:hover{
-  background: #18d26e;
-  color: #000;
+#header .profile .bx-refresh{
+  margin: 7.5rem 7.4rem 0;
+  font-size: 2rem;
+  color: #15D06F;
 }
 
 #main {
@@ -262,6 +259,14 @@ section {
 }
 .contact .email-form input[type="checkbox"] {
   height:auto;
+}
+.updateButton{
+  margin-top: 1.5rem;
+  color:#cbcbcf;
+}
+.updateButton:hover{
+  background: #18d26e;
+  color: #000;
 }
 /* .contact .email-form button {
   background: #15D06F;
